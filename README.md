@@ -1,7 +1,7 @@
-Ttorrent, a Java implementation of the BitTorrent protocol
-==========================================================
+ttorrent-android, a BitTorrent library for Android
+==================================================
 
-[![Build Status](https://travis-ci.org/mpetazzoni/ttorrent.png)](https://travis-ci.org/mpetazzoni/ttorrent)
+[![Build Status](https://travis-ci.org/henkel/ttorrent-android.svg?branch=android)](https://travis-ci.org/henkel/ttorrent-android)
 
 Description
 -----------
@@ -189,6 +189,11 @@ Authors and contributors
   Contributed the switch from Ant to Maven.
 * Alexey Ptashniy  
   Fixed an integer overflow in the calculation of a torrent's full size.
+* André Rocha
+  Removed Apache commons-codec dependency to support Android.
+* Philipp Henkel
+  Added Gradle configuration for Android.
+  Contributed fixes and tests to enable resumption of downloads.
 
 And many other helpful contributors on GitHub! Thanks to all of you.
 
