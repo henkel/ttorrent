@@ -77,8 +77,8 @@ section:
     ...
     <dependency>
       <groupId>com.turn</groupId>
-      <artifactId>ttorrent</artifactId>
-      <version>1.4</version>
+      <artifactId>ttorrent-core</artifactId>
+      <version>1.5</version>
     </dependency>
   </dependencies>
 ```
@@ -148,6 +148,23 @@ tracker.start();
 tracker.stop();
 ```
 
+### Track download progress
+
+You can track the progress of the download and the state of the torrent
+by registering an `Observer` on your `Client` instance. The observer is
+updated every time a piece of the download completes:
+
+```java
+client.addObserver(new Observer() {
+  @Override
+  public void update(Observable observable, Object data) {
+    Client client = (Client) observable;
+    float progress = client.getTorrent().getCompletion();
+    // Do something with progress.
+  }
+});
+```
+
 License
 -------
 
@@ -178,6 +195,7 @@ Authors and contributors
   Added Gradle configuration for Android.
   Contributed fixes and tests to enable resumption of downloads.
 
+And many other helpful contributors on GitHub! Thanks to all of you.
 
 Caveats
 -------
