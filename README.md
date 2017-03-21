@@ -1,7 +1,7 @@
 ttorrent-android, a BitTorrent library for Android
 ==================================================
 
-[![Build Status](https://travis-ci.org/henkel/ttorrent-android.svg?branch=android)](https://travis-ci.org/henkel/ttorrent-android)
+[![Build Status](https://travis-ci.org/philipphenkel/ttorrent-android.svg?branch=android)](https://travis-ci.org/philipphenkel/ttorrent-android)
 
 Description
 -----------
